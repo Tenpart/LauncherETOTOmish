@@ -11,5 +11,28 @@ root.resizable(width = False, height = False)
 
 
 
+#Button
+
+
+
+
+#Enter
+
+
+
+#Label
+
+
+
+#bind
+
+
+
+
+
+#Function
+
+
+
 
 root.mainloop()
