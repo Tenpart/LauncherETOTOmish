@@ -1,5 +1,5 @@
 from tkinter import *
-
+from PIL import Image, ImageTk
 
 root = Tk()
 
@@ -11,7 +11,13 @@ root.resizable(width = False, height = False)
 
 
 
-#Button
+#IMG-----Button
+image = ImageTk.PhotoImage(file="C:/Users/lesch/Documents/Photo/button.png", size = "20, 20")
+Button(root, image=image, command=lambda: print('click')).place(x = 100, y = 100)
+
+
+#IMG
+
 
 
 
