@@ -12,8 +12,10 @@ root.resizable(width = False, height = False)
 
 
 #IMG-----Button
-image = ImageTk.PhotoImage(file="C:/Users/lesch/Documents/Photo/button.png", size = "20, 2")
-Button(root, image=image, command=lambda: print('click')).place(x = 100, y = 100)
+image = Image.open('C:/Users/lesch/Documents/Photo/button.png')
+image = image.resize((160, 90), Image.ANTIALIAS) ## The (250, 250) is (height, width)
+image = ImageTk.PhotoImage(image)
+Button(root, bd = 0 ,activebackground = '#fff',image=image, command=lambda: print('click')).place(x = 300, y = 500)
 
 
 #IMG
